@@ -4,7 +4,7 @@ const categories = ['剧情', '射击', '角色扮演', '冒险', '策略', '解
 
 const Hero: React.FC = () => {
   return (
-    <section className="w-full bg-white border-b border-gray-200 py-8 sm:py-12 px-2 sm:px-4 flex flex-col items-center pt-20">
+    <section className="w-full bg-white border-b border-gray-200 py-8 sm:py-12 px-2 sm:px-4 flex flex-col items-center pt-10">
       <div className="w-full max-w-5xl flex flex-col items-center">
         <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-extrabold text-gray-800 tracking-wide mb-3 sm:mb-4 text-center">
           STEAM <span className="text-blue-700">TOP 100 GAMES</span>

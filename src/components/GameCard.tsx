@@ -23,7 +23,7 @@ const GameCard: React.FC<GameCardProps> = ({ rank, title, imageUrl, author, tags
         <div className="flex flex-row items-center justify-between w-full">
           <h3 className="text-sm sm:text-xl font-bold text-gray-800 truncate" title={title}>{rank}. {title}</h3>
           <div className="text-right flex-shrink-0 ml-2 sm:ml-4">
-            <p className="text-sm sm:text-2xl font-bold text-gray-800 leading-tight">{price}</p>
+            <p className="text-sm sm:text-2xl font-bold text-gray-800 leading-tight ">{price}</p>
             <p className="text-xs text-gray-400 mt-0.5" title="Historical Low">{historicalLow}</p>
           </div>
         </div>
