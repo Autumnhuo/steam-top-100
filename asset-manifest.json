@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/steam-top-100/static/css/main.31d6cfe0.css",
-    "main.js": "/steam-top-100/static/js/main.e1755ca3.js",
+    "main.js": "/steam-top-100/static/js/main.eaf3336c.js",
     "static/js/453.59d2781f.chunk.js": "/steam-top-100/static/js/453.59d2781f.chunk.js",
     "index.html": "/steam-top-100/index.html",
-    "main.e1755ca3.js.map": "/steam-top-100/static/js/main.e1755ca3.js.map",
+    "main.eaf3336c.js.map": "/steam-top-100/static/js/main.eaf3336c.js.map",
     "453.59d2781f.chunk.js.map": "/steam-top-100/static/js/453.59d2781f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.e1755ca3.js"
+    "static/js/main.eaf3336c.js"
   ]
 }
