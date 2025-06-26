@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
     <nav className="w-full flex items-center justify-between px-8 py-4 bg-white/80 backdrop-blur-sm border-b border-gray-200 fixed top-0 left-0 z-50">
       <div className="flex items-center">
         <span className="text-2xl font-extrabold text-gray-800 tracking-wide">ROLL</span>
-        <img src="/logo.jpeg" alt="Roll Game Logo" className="h-9 w-auto mr-0" />
+        <img src={process.env.PUBLIC_URL + '/favivon.png'} alt="logo" />
         <span className="text-2xl font-extrabold text-gray-800 tracking-wide">GAME</span>
       </div>
       <div className="flex items-center gap-6">
