@@ -73,10 +73,10 @@ const GameList: React.FC = () => {
 
   return (
     <div ref={listRef}>
-      <div className="flex justify-end mb-4 space-x-2">
+      <div className="flex flex-col xs:flex-row justify-end mb-4 space-y-2 xs:space-y-0 xs:space-x-2 w-full overflow-x-auto">
         <button
           onClick={() => handleSortChange('rank')}
-          className={`px-4 py-2 font-semibold rounded-md shadow-sm transition-colors text-sm ${
+          className={`px-3 sm:px-4 py-2 font-semibold rounded-md shadow-sm transition-colors text-xs sm:text-sm ${
             sortConfig.key === 'rank' ? 'bg-gray-800 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
           }`}
         >
@@ -84,7 +84,7 @@ const GameList: React.FC = () => {
         </button>
         <button
           onClick={() => handleSortChange('price')}
-          className={`px-4 py-2 font-semibold rounded-md shadow-sm transition-colors text-sm ${
+          className={`px-3 sm:px-4 py-2 font-semibold rounded-md shadow-sm transition-colors text-xs sm:text-sm ${
             sortConfig.key === 'price' ? 'bg-gray-800 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
           }`}
         >
@@ -92,7 +92,7 @@ const GameList: React.FC = () => {
         </button>
       </div>
 
-      <div className="w-full flex flex-col gap-6">
+      <div className="w-full flex flex-col gap-4 sm:gap-6">
         {paginatedGames.map((game) => (
           <GameCard
             key={game.rank}
@@ -110,21 +110,21 @@ const GameList: React.FC = () => {
         ))}
       </div>
 
-      <div className="flex justify-center items-center mt-10 space-x-4">
+      <div className="flex flex-wrap justify-center items-center mt-8 sm:mt-10 space-x-2 sm:space-x-4 w-full overflow-x-auto">
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className="px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-600 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="px-3 sm:px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-600 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-xs sm:text-sm"
         >
           上一页
         </button>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1 sm:space-x-2">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
             <button
               key={page}
               onClick={() => handlePageChange(page)}
-              className={`w-10 h-10 rounded-md transition-colors text-sm font-medium ${
+              className={`w-8 h-8 sm:w-10 sm:h-10 rounded-md transition-colors text-xs sm:text-sm font-medium ${
                 currentPage === page
                   ? 'bg-gray-800 text-white shadow-sm'
                   : 'bg-white text-gray-600 border border-gray-300 hover:bg-gray-50'
@@ -138,7 +138,7 @@ const GameList: React.FC = () => {
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-600 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="px-3 sm:px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-600 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-xs sm:text-sm"
         >
           下一页
         </button>
